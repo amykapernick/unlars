@@ -7,6 +7,12 @@ CODE_OF_CONDUCT.md
 
 __oryx_prod_node_modules
 
+.oryx_prod_node_modules
+
+*oryx_prod_node_modules
+
 **/README.md
+
+**/node_modules
 
 api
