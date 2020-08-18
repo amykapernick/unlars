@@ -1,0 +1,36 @@
+$primary: #1C75BC;
+$secondary: #6DAFFB;
+$tertiary: #693E00;
+$highlight: #DDA01D;
+$neutral: #3E4756;
+
+$font_regular: 'Source Sans Pro', Arial, sans-serif;
+$font_heading: 'Source Sans Pro', Arial, sans-serif;
+
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-weight: 400;
+	font-style: normal;
+	src: url('../fonts/SourceSansPro-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-weight: 400;
+	font-style: italic;
+	src: url('../fonts/SourceSansPro-Italic.ttf');
+}
+
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-weight: 700;
+	font-style: normal;
+	src: url('../fonts/SourceSansPro-Bold.ttf');
+}
+
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-weight: 700;
+	font-style: italic;
+	src: url('../fonts/SourceSansPro-BoldItalic.ttf');
+}

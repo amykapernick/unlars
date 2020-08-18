@@ -1,0 +1,35 @@
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 0 -10px;
+	padding: 0;
+
+	img {
+		background-image: 
+			repeating-linear-gradient(45deg, $neutral 25%, transparent 25%, transparent 75%, $neutral 75%, $neutral),
+			repeating-linear-gradient(45deg, $neutral 25%, transparent 25%, transparent 75%, $neutral 75%, $neutral);
+		background-position: 0 0,50px 50px;
+		background-size: calc(2 * 50px) calc(2 * 50px);
+		max-width: 100%;
+	}
+
+	li {
+		margin: 0 10px;
+		flex: 1 1 300px;
+	}
+
+	@supports(gap: 10px) {
+		gap: 10px;
+		margin: 0;
+
+		li {
+			margin: 0;
+		}
+	}
+
+	@supports(grid-template-areas: '.') {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	}
+}

@@ -1,0 +1,27 @@
+header {
+	color: $primary;
+	text-align: center;
+	padding: 20px;
+
+	h1 {
+		font-size: 3.7em;
+		position: relative;
+		display: inline;
+
+		&:before {
+			background: $highlight;
+			content: '';
+			height: 10px;
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 7px;
+			z-index: -1;
+		}
+	}
+
+	.subheading {
+		color: $tertiary;
+		font-size: 1.6em;
+	}
+}

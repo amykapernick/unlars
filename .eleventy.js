@@ -4,4 +4,5 @@ module.exports = (eleventyConfig) => {
 
 	// Static Files
 	eleventyConfig.addPassthroughCopy({'src/img': 'img'})
+	eleventyConfig.addPassthroughCopy({'src/fonts': 'fonts'})
 }
