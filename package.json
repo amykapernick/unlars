@@ -2,11 +2,18 @@
   "name": "unlars",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "api": "cd api && npm start"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Amy Kapernick <amy@aimhigherweb.design> (https://amyskapers.dev)",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "path": "^0.12.7",
+    "sass": "^1.26.10"
+  }
 }
