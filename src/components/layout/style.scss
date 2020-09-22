@@ -1,0 +1,58 @@
+@import '../../scss/_variables.scss';
+
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-weight: 400;
+	font-style: normal;
+	src: url('../../fonts/SourceSansPro-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-weight: 400;
+	font-style: italic;
+	src: url('../../fonts/SourceSansPro-Italic.ttf');
+}
+
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-weight: 700;
+	font-style: normal;
+	src: url('../../fonts/SourceSansPro-Bold.ttf');
+}
+
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-weight: 700;
+	font-style: italic;
+	src: url('../../fonts/SourceSansPro-BoldItalic.ttf');
+}
+
+body {
+	font-family: $font_regular;	
+	margin: 0;
+	padding: 0;
+
+	@supports(grid-template-areas: '.') {
+		display: grid;
+		grid-template-rows: auto 1fr auto;
+		min-height: 100vh;
+	}
+}
+
+main {
+	margin: 0 auto;
+	width: 90vw;
+	max-width: 1200px;
+}
+
+a {
+	background: $highlight;
+	color: $neutral;
+
+	&:hover, &:focus {
+		background: $neutral;
+		color: $highlight;
+		text-decoration: none;
+	}
+}
