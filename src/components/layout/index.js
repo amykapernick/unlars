@@ -1,4 +1,5 @@
 import React, {Fragment} from 'react'
+import {Helmet} from 'react-helmet'
 
 import Header from '../header'
 import Footer from '../footer'
@@ -7,6 +8,7 @@ import './style.scss';
 
 const Layout = ({children}) => (
 	<Fragment>
+		<Meta />
 		<Header/>
 		<main>
 			{children}
@@ -16,11 +18,11 @@ const Layout = ({children}) => (
 )
 
 const Meta = () => (
-	<Fragment>
+	<Helmet>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>UnLars</title>
-	</Fragment>
+	</Helmet>
 )
 
 

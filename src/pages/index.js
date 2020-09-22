@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 
 import '../scss/layouts/gallery.scss';
 
+
 const IndexPage = () => (
 	<Layout>
 		<ul class="gallery">
