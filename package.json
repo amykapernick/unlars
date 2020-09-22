@@ -1,19 +1,28 @@
 {
   "name": "unlars",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.html",
+  "description": "Like Unsplash, but for Lars",
   "scripts": {
-    "start": "eleventy --serve",
-    "build": "eleventy",
-    "api": "cd api && npm start"
+    "start": "npm run dev",
+    "dev": "gatsby develop",
+    "build": "gatsby build"
   },
   "keywords": [],
-  "author": "Amy Kapernick <amy@aimhigherweb.design> (https://amyskapers.dev)",
-  "license": "ISC",
+  "author": "Amy Kapernick <amy@kapers.dev> (https://amyskapers.dev)",
+  "license": "MIT",
   "dependencies": {
-    "@11ty/eleventy": "^0.11.0",
-    "path": "^0.12.7",
-    "sass": "^1.26.10"
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.1.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-react": "^7.20.0",
+    "gatsby": "^2.22.17",
+    "gatsby-plugin-eslint": "^2.0.8",
+    "gatsby-plugin-react-helmet": "^3.3.3",
+    "gatsby-plugin-sass": "^2.3.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.0.0"
   }
 }

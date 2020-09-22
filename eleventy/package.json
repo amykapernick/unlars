@@ -1,0 +1,19 @@
+{
+  "name": "unlars",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "api": "cd api && npm start"
+  },
+  "keywords": [],
+  "author": "Amy Kapernick <amy@aimhigherweb.design> (https://amyskapers.dev)",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "path": "^0.12.7",
+    "sass": "^1.26.10"
+  }
+}
