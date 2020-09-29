@@ -7,9 +7,16 @@
     "dev": "gatsby develop",
     "build": "gatsby build"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amykapernick/unlars.git"
+  },
   "author": "Amy Kapernick <amy@kapers.dev> (https://amyskapers.dev)",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amykapernick/unlars/issues"
+  },
+  "homepage": "https://www.unlars.cloud",
   "dependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.1.0",
