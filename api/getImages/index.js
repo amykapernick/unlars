@@ -1,5 +1,3 @@
-require('dotenv').config()
-
 module.exports = async function (context, req) {
     const {BlobServiceClient, StorageSharedKeyCredential} = require('@azure/storage-blob'),
     account = process.env.ACCOUNT_NAME,
@@ -8,15 +6,7 @@ module.exports = async function (context, req) {
     blobUrl = `https://${account}.blob.core.windows.net`
     blobServiceClient = new BlobServiceClient(blobUrl, sharedKeyCredential)
 
-    context.log(blobServiceClient)
-
-    context.log('\nListing containers...');
-
-    // List the blob(s) in the container.
-    let i = 1;
-    for await (const container of blobServiceClient.listContainers()) {
-        context.log(`Container ${i++}: ${container.name}`);
-    }
+    const container = blobServiceClient.getContainerClient("images");
 
     // context.log(blobServiceClient.listContainers())
 
@@ -31,9 +21,8 @@ module.exports = async function (context, req) {
 
     context.res = {
         // status: 200, /* Defaults to 200 */
-        body: JSON.stringify({
-            blobServiceClient,
-            containers: blobServiceClient.listContainers()
-        }),
+        body: {
+            container
+        },
     };
 }
